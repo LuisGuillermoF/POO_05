@@ -1,5 +1,6 @@
 package InventorySystem;
 
+import javax.swing.*;
 import java.util.ArrayList;
 
 public class Inventory {
@@ -19,7 +20,7 @@ public class Inventory {
 
     public Object showProducts(){
         for (Product product : this.Products){
-            System.out.println("Available products: "+ product.getId() + " " + product.getName() + " Price: " + product.getPrice());
+            JOptionPane.showMessageDialog(null,"Available products: "+ product.getId() + " " + product.getName() + " Price: " + product.getPrice());
         }
         return null;
     }

@@ -17,7 +17,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // POINT #1 INVENTORY SYSTEM.
-        Inventory inventory = new Inventory();
+        /*Inventory inventory = new Inventory();
         Product product = new Product();
         Product product1 = new Product(1,"pencil",2000);
         Product product2 = new Product(2,"notebook",9000);
@@ -64,22 +64,19 @@ public class Main {
 
                         inventory.removeProduct(idSent);
                         JOptionPane.showMessageDialog(null,"Product removed successfully.");
-                        System.out.println("type any key to return to the menu.");
 
                         break;
                     case "3":
                         JOptionPane.showMessageDialog(null,"Below are the current products: ");
                         JOptionPane.showMessageDialog(null,inventory.showProducts());
 
-                        System.out.println("type any key to return to the menu.");
 
-                        scanner.next();
                         break;
                     case "4":
-                        System.out.println(inventory.filtrateProductsbyName("pencil"));
+                        String buscar = JOptionPane.showInputDialog("write the article for search");
+                        JOptionPane.showMessageDialog(null,inventory.filtrateProductsbyName(buscar));
 
-                        System.out.println("type any key to return to the menu.");
-                        scanner.next();
+
                         break;
                     case "5":
                         System.out.println("Thanks for using your inventory system.");
@@ -91,7 +88,7 @@ public class Main {
             }
 
 
-        } while (!option.equals("5"));
+        } while (!option.equals("5"));*/
 
 
         //POINT #2 Employees register system.
