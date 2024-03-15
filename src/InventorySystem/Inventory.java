@@ -17,10 +17,11 @@ public class Inventory {
         return this.Products.removeIf(product -> product.getId() == id);
     }
 
-    public void showProducts(){
+    public Object showProducts(){
         for (Product product : this.Products){
             System.out.println("Available products: "+ product.getId() + " " + product.getName() + " Price: " + product.getPrice());
         }
+        return null;
     }
 
     public Product filtrateProductsbyName(String name){
